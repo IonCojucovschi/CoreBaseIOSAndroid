@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Int.Core", "Int.Core\Int.Core.csproj", "{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Int.Droid", "Int.Droid\Int.Droid.csproj", "{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Int.iOS", "Int.iOS\Int.iOS.csproj", "{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "NUnit.Int.Core", "NUnit.Int.Core\NUnit.Int.Core.csproj", "{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Int.Core.Share", "Int.ShareCore\Int.Core.Share.shproj", "{1C93BE36-F4F3-4996-B07A-3A794EA8E8CB}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Int.ShareCore\Int.ShareCore.projitems*{b56824ff-888d-4895-a530-6298c39a87a4}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|Any CPU = Release|Any CPU
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Release|iPhone.Build.0 = Release|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Release|iPhone.Build.0 = Release|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Release|iPhone.Build.0 = Release|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Release|iPhone.Build.0 = Release|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B9617552-615C-4E6C-A01B-FFE6BFBAE48D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = @\n${FileName}\n \nAuthor:\n      ${AuthorName} <${AuthorEmail}>\n\nCopyright (c) ${Year} ${CopyrightHolder}\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the "Software"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.
+		$0.NameConventionPolicy = $2
+		$2.Rules = $3
+		$3.NamingRule = $23
+		$23.AffectedEntity = None
+		$23.VisibilityMask = VisibilityMask
+		$23.NamingStyle = None
+		$23.IncludeInstanceMembers = True
+		$23.IncludeStaticEntities = True
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{333DDFAB-B5A1-43BA-A27C-9DB11460FEB1}</ProjectGuid>
+		<ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+		<OutputType>Library</OutputType>
+		<RootNamespace>XF.Core</RootNamespace>
+		<AssemblyName>XF.Core</AssemblyName>
+		<TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+		<NuGetPackageImportStamp>
+		</NuGetPackageImportStamp>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>DEBUG;</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="App.cs" />
+		<Compile Include="Bootstrap\Bootstrapper.cs" />
+		<Compile Include="Extensions\IObservableExtensions.cs" />
+		<Compile Include="Factories\IPageFactory.cs" />
+		<Compile Include="IoC\ISettingsView.cs" />
+		<Compile Include="IoC\NinjectBindings.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="Services\App\INavigator.cs" />
+		<Compile Include="Services\Rest\IRest.cs" />
+		<Compile Include="ViewModel\BaseViewModel.cs" />
+		<Compile Include="Pages\ContentPageBase.cs" />
+		<Compile Include="Views\RoundedView.cs" />
+		<Compile Include="Bootstrap\AutoBootstrapper.cs" />
+		<Compile Include="Bootstrap\AutoModule.cs" />
+		<Compile Include="Bootstrap\AppModule.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="project.json" />
+	</ItemGroup>
+	<ItemGroup />
+	<ItemGroup>
+	  <Reference Include="System.Reactive.Interfaces">
+	    <HintPath>..\..\..\XFTemplate\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Reactive.Core">
+	    <HintPath>..\..\..\XFTemplate\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Reactive.Linq">
+	    <HintPath>..\..\..\XFTemplate\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll</HintPath>
+	  </Reference>
+	  <Reference Include="System.Reactive.PlatformServices">
+	    <HintPath>..\..\..\XFTemplate\packages\Rx-PlatformServices.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.PlatformServices.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Splat">
+	    <HintPath>..\..\..\XFTemplate\packages\Splat.1.4.0\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ReactiveUI">
+	    <HintPath>..\..\..\XFTemplate\packages\reactiveui-core.7.4.0\lib\portable-net45+netcore45+wpa81+win8+wp8+UAP10+MonoAndroid403+MonoTouch10+Xamarin.iOS10\ReactiveUI.dll</HintPath>
+	  </Reference>
+	  <Reference Include="ReactiveUI.XamForms">
+	    <HintPath>..\..\..\XFTemplate\packages\reactiveui-xamforms.7.4.0\lib\portable-net45+netcore45+wp8+wpa81+UAP10+MonoAndroid403+MonoTouch10+Xamarin.iOS10\ReactiveUI.XamForms.dll</HintPath>
+	  </Reference>
+	  <Reference Include="I18NPortable">
+	    <HintPath>..\..\..\XFTemplate\packages\I18NPortable.0.6.0\lib\netstandard1.1\I18NPortable.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+	<Import Project="..\..\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+	<Import Project="..\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+	<Import Project="..\..\..\XFTemplate\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\..\XFTemplate\packages\Xamarin.Forms.2.3.4.267\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+	<Import Project="..\..\..\XFTemplate\packages\NETStandard.Library.2.0.0\build\NETStandard.Library.targets" Condition="Exists('..\..\..\XFTemplate\packages\NETStandard.Library.2.0.0\build\NETStandard.Library.targets')" />
+</Project>

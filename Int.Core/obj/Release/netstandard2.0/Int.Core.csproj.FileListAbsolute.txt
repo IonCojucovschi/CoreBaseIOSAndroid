@@ -1,0 +1,9 @@
+/Users/bss/Documents/Projects/Core/Int.Core/bin/Release/netstandard2.0/Int.Core.deps.json
+/Users/bss/Documents/Projects/Core/Int.Core/bin/Release/netstandard2.0/Int.Core.dll
+/Users/bss/Documents/Projects/Core/Int.Core/bin/Release/netstandard2.0/Int.Core.pdb
+/Users/bss/Documents/Projects/Core/Int.Core/obj/Release/netstandard2.0/Int.Core.csproj.CoreCompileInputs.cache
+/Users/bss/Documents/Projects/Core/Int.Core/obj/Release/netstandard2.0/Int.Core.AssemblyInfoInputs.cache
+/Users/bss/Documents/Projects/Core/Int.Core/obj/Release/netstandard2.0/Int.Core.AssemblyInfo.cs
+/Users/bss/Documents/Projects/Core/Int.Core/obj/Release/netstandard2.0/Int.Core.dll
+/Users/bss/Documents/Projects/Core/Int.Core/obj/Release/netstandard2.0/Int.Core.pdb
+/Users/bss/Documents/Projects/Core/Int.Core/obj/Release/netstandard2.0/Int.Core.csprojResolveAssemblyReference.cache

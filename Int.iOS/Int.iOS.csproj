@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <ProjectGuid>{C77CBFAD-9BC7-4F65-8D2F-197F6CDF4774}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Int.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Int.iOS</AssemblyName>
+    <ReleaseVersion>1.1.3</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\packages\WebSocket4Net.0.14.1\lib\Xamarin.iOS10\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EngineIoClientDotNet">
+      <HintPath>..\packages\EngineIoClientDotNet.0.9.22\lib\xamarinios10\EngineIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketIoClientDotNet">
+      <HintPath>..\packages\SocketIoClientDotNet.0.9.13\lib\xamarinios10\SocketIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.0\lib\Xamarin.iOS10\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\packages\reactiveui-core.7.4.0\lib\Xamarin.iOS10\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="WebP.Touch">
+      <HintPath>..\packages\WebP.Touch.1.0.8\lib\Xamarin.iOS10\WebP.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Xamarin.Auth">
+      <HintPath>..\packages\Xamarin.Auth.1.6.0.2\lib\Xamarin.iOS10\Xamarin.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\packages\Plugin.Permissions.3.0.0.12\lib\xamarinios10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.5.0.6\lib\xamarinios10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.3.840\lib\Xamarin.iOS10\FFImageLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Platform">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.3.840\lib\Xamarin.iOS10\FFImageLoading.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Transformations">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Transformations.2.4.3.840\lib\Xamarin.iOS10\FFImageLoading.Transformations.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Svg.Platform">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Svg.2.4.3.840\lib\Xamarin.iOS10\FFImageLoading.Svg.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\packages\SkiaSharp.1.60.2\lib\Xamarin.iOS\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media">
+      <HintPath>..\packages\Xam.Plugin.Media.4.0.1.1\lib\xamarinios10\Plugin.Media.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Collections\" />
+    <Folder Include="Config\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Factories\Adapter\Abstraction\Contract\">
+    </Folder>
+    <Folder Include="Wrappers\Text\">
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions\UILabel.cs" />
+    <Compile Include="Extensions\UITextField.cs" />
+    <Compile Include="Extensions\UIView.cs" />
+    <Compile Include="Device\Camera.cs" />
+    <Compile Include="Factories\Adapter\ComponentViewSource.cs" />
+    <Compile Include="AppTools.cs" />
+    <Compile Include="Factories\Adapter\ComponentViewSourceFactory.cs" />
+    <Compile Include="Factories\Adapter\Contract\IDataSource.cs" />
+    <Compile Include="Factories\Adapter\Contract\IReusableView.cs" />
+    <Compile Include="Factories\Adapter\Abstraction\InternalDataSource.cs" />
+    <Compile Include="Factories\Adapter\Abstraction\CollectionViewCell.cs" />
+    <Compile Include="Factories\Adapter\Abstraction\CollectionViewSource.cs" />
+    <Compile Include="Factories\Adapter\CellView\ComponentTableViewCell.cs" />
+    <Compile Include="Extensions\UIImageView.cs" />
+    <Compile Include="Extensions\UIImage.cs" />
+    <Compile Include="Extensions\UITextView.cs" />
+    <Compile Include="Controllers\ModalPicker\ModalPickerAnimatedDismissed.cs" />
+    <Compile Include="Controllers\ModalPicker\ModalPickerAnimatedTransitioning.cs" />
+    <Compile Include="Controllers\ModalPicker\ModalPickerTransitionDelegate.cs" />
+    <Compile Include="Controllers\ModalPicker\ModalPickerViewController.cs" />
+    <Compile Include="Device\DeviceBase.cs" />
+    <Compile Include="Helpers\LocationHelper.cs" />
+    <Compile Include="Device\Location\Location.cs" />
+    <Compile Include="Device\Location\AnnotationOverride.cs" />
+    <Compile Include="Device\Location\LocationDelegate.cs" />
+    <Compile Include="Extensions\MKMapView.cs" />
+    <Compile Include="Helpers\FontHelper.cs" />
+    <Compile Include="Extensions\UIButton.cs" />
+    <Compile Include="Extensions\UIView.Animation.cs" />
+    <Compile Include="Controllers\DropdownView\BaseAdapter.cs" />
+    <Compile Include="Controllers\DropdownView\DropdownListView.cs" />
+    <Compile Include="Controllers\DropdownView\IAdapter.cs" />
+    <Compile Include="Controllers\DropdownView\SimpleCellView.cs" />
+    <Compile Include="Controllers\DropdownView\SimpleCellView.designer.cs" />
+    <Compile Include="Controllers\DropdownView\StringAdapter.cs" />
+    <Compile Include="Wrappers\ClickableView.cs" />
+    <Compile Include="Wrappers\Button\UIButtonView.cs" />
+    <Compile Include="Wrappers\ImageView\UIImageButton.cs" />
+    <Compile Include="Factories\Activity\ComponentViewController.cs" />
+    <Compile Include="Wrappers\View\Constraint.cs" />
+    <Compile Include="Wrappers\View\IConstraint.cs" />
+    <Compile Include="Extensions\UIView.IConstraint.cs" />
+    <Compile Include="Helpers\Utility.cs" />
+    <Compile Include="Extensions\iOSObject.cs" />
+    <Compile Include="Data\Repository\RepositoryMultiTable.cs" />
+    <Compile Include="Data\Repository\Entity.cs" />
+    <Compile Include="Extensions\UIColor.cs" />
+    <Compile Include="Tools\StoryboradManager.cs" />
+    <Compile Include="Controllers\AutoCompleteTextField.cs" />
+    <Compile Include="Controllers\RadialProgress\RadialProgressView.cs" />
+    <Compile Include="Extensions\UIViewController.cs" />
+    <Compile Include="Factories\Adapter\Contract\IExpandable.cs" />
+    <Compile Include="Extensions\String.cs" />
+    <Compile Include="Extensions\UITableView.cs" />
+    <Compile Include="Controllers\CallAnimatedRoundImageControl\CallAnimatedRoundImage.cs" />
+    <Compile Include="Views\UIRoundView.cs" />
+    <Compile Include="Views\UIRoundImageView.cs" />
+    <Compile Include="Extensions\NSDictionary.cs" />
+    <Compile Include="Views\UIViewXib.cs" />
+    <Compile Include="Network\Socket\BaseSocket.cs" />
+    <Compile Include="Data\MVVM\BaseNativeViewModel.cs" />
+    <Compile Include="Device\Network.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossListViewWrapper.cs" />
+    <Compile Include="Wrappers\Widget\WidgetWrapperFactory.cs" />
+    <Compile Include="Views\UIShadowCastingView.cs" />
+    <Compile Include="Views\UIMaterialTextInput.cs" />
+    <Compile Include="Factories\Adapter\V2\ComponentViewSourceExpandable.cs" />
+    <Compile Include="Factories\Adapter\V2\UIExpandableTableViewHeaderCell.cs" />
+    <Compile Include="Factories\Adapter\V2\ExpandableSource\IExpandable.cs" />
+    <Compile Include="Factories\Adapter\V2\ExpandableSource\RowChildClickEventArgs.cs" />
+    <Compile Include="Factories\Adapter\V2\ExpandableSource\RowParentClickEventArgs.cs" />
+    <Compile Include="Factories\Adapter\V2\ExpandableSource\ComponentViewSourceExpandableException.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossTextWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossImageWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossViewWrapper.cs" />
+    <Compile Include="Wrappers\Widget\CrossViewInjection\CrossViewInjector.cs" />
+    <Compile Include="Factories\Activity\ComponentMVVMViewController.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\NativeInterfaceFactory\Interfaces\INativeTextViewWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\NativeInterfaceFactory\Interfaces\INativeViewWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\NativeInterfaceFactory\NativeWrapperFactory.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\NativeInterfaceFactory\NativeWrappers\Text\UILabelWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\NativeInterfaceFactory\NativeWrappers\Text\UITextFieldWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\NativeInterfaceFactory\NativeWrappers\Text\UITextViewWrapper.cs" />
+    <Compile Include="Data\Repository\BaseWindow.cs" />
+    <Compile Include="Window\WindowView.cs" />
+    <Compile Include="Window\WindowView.designer.cs">
+      <DependentUpon>WindowView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Base\WindowShare.cs" />
+    <Compile Include="Factories\Adapter\Abstraction\Contract\ICollectionViewSourceDelegate.cs" />
+    <Compile Include="Factories\Adapter\Abstraction\Contract\ITableViewSourceDelegate.cs" />
+    <Compile Include="Factories\Adapter\ComponentViewSourceFactory.Collection.cs">
+      <DependentUpon>ComponentViewSourceFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wrappers\Text\HyperLabel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\SimpleCellView.xib" />
+    <InterfaceDefinition Include="Window\WindowView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Entitlements.plist" />
+    <None Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\error_placeholder.png" />
+    <BundleResource Include="..\Int.Core\Resources\Drawables\error.svg">
+      <Link>Resources\error.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Int.Core\Resources\Drawables\success.svg">
+      <Link>Resources\success.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Int.Core\Resources\Drawables\warning.svg">
+      <Link>Resources\warning.svg</Link>
+    </BundleResource>
+    <BundleResource Include="..\Int.Core\Resources\Drawables\loading_default.gif">
+      <Link>Resources\loading_default.gif</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Int.Core\Int.Core.csproj">
+      <Project>{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}</Project>
+      <Name>Int.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\packages\Fody.2.1.2\build\netstandard1.0\Fody.targets" Condition="Exists('..\packages\Fody.2.1.2\build\netstandard1.0\Fody.targets')" />
+  <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+</Project>

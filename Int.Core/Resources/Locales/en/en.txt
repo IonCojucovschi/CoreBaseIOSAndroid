@@ -1,0 +1,17 @@
+﻿#---Share---#
+
+ErrorMessageConnection = Problem with internet connection.
+ErrorMessageServer = Server refused query. Try again later.
+ErrorMessageSerialization = Can't process the response from server.
+
+ErrorNullValue = Value cannot be null or empty.
+InvalidHexString = Invalid hex string
+
+ErrorIsLogin = You could not log into the application !!!
+ErrorIsAdmin = You don't have ADMIN permissions !!!
+
+Wait = Please Wait ...
+EmptyPhone = Empty field Phone
+
+CompleteRequired = Complete required
+CompleteRequiredFields = Complete required fields

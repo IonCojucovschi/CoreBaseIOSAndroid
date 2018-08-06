@@ -1,0 +1,15 @@
+layout/ImageLoader.axml;layout/imageloader.xml
+anim/FadeIn.xml;anim/fadein.xml
+anim/FadeOut.xml;anim/fadeout.xml
+anim/LeftSlide.xml;anim/leftslide.xml
+anim/MoveLeft.xml;anim/moveleft.xml
+anim/MoveRight.xml;anim/moveright.xml
+anim/RightSlide.xml;anim/rightslide.xml
+values/attrs.xml;values/attrs.xml
+layout/ZoomView.axml;layout/zoomview.xml
+drawable-nodpi/error.svg;drawable-nodpi/error.svg
+drawable-nodpi/loading_default.gif;drawable-nodpi/loading_default.gif
+drawable-nodpi/success.svg;drawable-nodpi/success.svg
+drawable-nodpi/warning.svg;drawable-nodpi/warning.svg
+drawable-nodpi/cursor.xml;drawable-nodpi/cursor.xml
+layout/window_view.axml;layout/window_view.xml

@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props')" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C50EB93-2C8D-49E3-B134-0B0E1F7D2CF1}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Int.Droid</RootNamespace>
+    <AssemblyName>Int.Droid</AssemblyName>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AndroidTlsProvider>
+    </AndroidTlsProvider>
+    <ReleaseVersion>1.1.3</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__DROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <NoStdLib>false</NoStdLib>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.0\lib\monoandroid\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\packages\reactiveui-core.7.4.0\lib\MonoAndroid403\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\packages\WebSocket4Net.0.14.1\lib\monoandroid23\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EngineIoClientDotNet">
+      <HintPath>..\packages\EngineIoClientDotNet.0.9.22\lib\monoandroid10\EngineIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketIoClientDotNet">
+      <HintPath>..\packages\SocketIoClientDotNet.0.9.13\lib\monoandroid10\SocketIoClientDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Core.Common">
+      <HintPath>..\packages\Xamarin.Android.Arch.Core.Common.26.1.0\lib\MonoAndroid80\Xamarin.Android.Arch.Core.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Glide">
+      <HintPath>..\packages\Glide.Xamarin.4.1.1\lib\MonoAndroid10\Glide.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI.Fody.Helpers">
+      <HintPath>..\packages\ReactiveUI.Fody.2.2.11\lib\MonoAndroid\ReactiveUI.Fody.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth">
+      <HintPath>..\packages\Xamarin.Auth.1.6.0.2\lib\MonoAndroid10\Xamarin.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
+    <Reference Include="Akavache">
+      <HintPath>..\packages\akavache.core.5.0.0\lib\MonoAndroid\Akavache.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Sqlite3">
+      <HintPath>..\packages\akavache.sqlite3.5.0.0\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.Sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="MemoryCache">
+      <HintPath>..\packages\MemoryCache.1.2.0\lib\MemoryCache.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.11\lib\MonoAndroid\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.lib.e_sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.lib.e_sqlite3.android.1.1.11\lib\MonoAndroid\SQLitePCLRaw.lib.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.e_sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.provider.e_sqlite3.android.1.1.11\lib\MonoAndroid\SQLitePCLRaw.provider.e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_e_sqlite3">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.11\lib\MonoAndroid\SQLitePCLRaw.batteries_e_sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.11\lib\MonoAndroid\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Tasks">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Tasks.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Base.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Iid">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Iid.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Iid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Gcm">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Gcm.60.1142.1\lib\MonoAndroid80\Xamarin.GooglePlayServices.Gcm.dll</HintPath>
+    </Reference>
+    <Reference Include="Com.OneSignal.Abstractions">
+      <HintPath>..\packages\Com.OneSignal.3.2.0\lib\MonoAndroid10\Com.OneSignal.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Com.OneSignal">
+      <HintPath>..\packages\Com.OneSignal.3.2.0\lib\MonoAndroid10\Com.OneSignal.dll</HintPath>
+    </Reference>
+    <Reference Include="OneSignal.Android.Binding">
+      <HintPath>..\packages\Com.OneSignal.3.2.0\lib\MonoAndroid10\OneSignal.Android.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.CurrentActivity">
+      <HintPath>..\packages\Plugin.CurrentActivity.2.1.0.4\lib\monoandroid44\Plugin.CurrentActivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\packages\Plugin.Permissions.3.0.0.12\lib\monoandroid71\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.5.0.6\lib\monoandroid71\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.3.840\lib\MonoAndroid10\FFImageLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Platform">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.3.840\lib\MonoAndroid10\FFImageLoading.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Svg.Platform">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Svg.2.4.3.840\lib\MonoAndroid10\FFImageLoading.Svg.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="FFImageLoading.Transformations">
+      <HintPath>..\packages\Xamarin.FFImageLoading.Transformations.2.4.3.840\lib\MonoAndroid10\FFImageLoading.Transformations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Annotations">
+      <HintPath>..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Common">
+      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\lib\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Arch.Lifecycle.Runtime">
+      <HintPath>..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\lib\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Compat.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.UI.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils">
+      <HintPath>..\packages\Xamarin.Android.Support.Core.Utils.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.CustomTabs">
+      <HintPath>..\packages\Xamarin.Android.Support.CustomTabs.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.CustomTabs.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Exif">
+      <HintPath>..\packages\Xamarin.Android.Support.Exif.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Exif.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment">
+      <HintPath>..\packages\Xamarin.Android.Support.Fragment.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat">
+      <HintPath>..\packages\Xamarin.Android.Support.Media.Compat.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\packages\SkiaSharp.1.60.2\lib\MonoAndroid\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\MonoAndroid10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\MonoAndroid10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Media">
+      <HintPath>..\packages\Xam.Plugin.Media.4.0.1.1\lib\monoandroid71\Plugin.Media.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\Adapter\ComponentViewHolderAdapterFactory.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions\Button.cs" />
+    <Compile Include="Extensions\TextView.cs" />
+    <Compile Include="Extensions\Exif.cs" />
+    <Compile Include="Extensions\Color.cs" />
+    <Compile Include="Extensions\ImageView.cs" />
+    <Compile Include="Extensions\Bitmap.cs" />
+    <Compile Include="Extensions\View.cs" />
+    <Compile Include="Extensions\ViewXml.cs" />
+    <Compile Include="Extensions\Activity.cs" />
+    <Compile Include="Extensions\Units.cs" />
+    <Compile Include="Helpers\Utility.cs" />
+    <Compile Include="Helpers\Performance.cs" />
+    <Compile Include="Helpers\MainThreadDispatcher.cs" />
+    <Compile Include="Helpers\Message.cs" />
+    <Compile Include="Device\Camera.cs" />
+    <Compile Include="Device\Network.cs" />
+    <Compile Include="Transformations\ResizeView.cs" />
+    <Compile Include="Views\BVideoView.cs" />
+    <Compile Include="Views\GlobalLayoutListener.cs" />
+    <Compile Include="Views\ZoomView.cs" />
+    <Compile Include="Device\Memory.cs" />
+    <Compile Include="Device\DeviceBase.cs" />
+    <Compile Include="Helpers\ImageHelpers.cs" />
+    <Compile Include="Factories\Adapter\ComponentAdapterFactory.cs" />
+    <Compile Include="Factories\Adapter\ComponentExpandableListAdapterFactory.cs" />
+    <Compile Include="Device\Location.cs" />
+    <Compile Include="Factories\Activity\ComponentActivity.cs" />
+    <Compile Include="Controllers\ImageLoader.cs" />
+    <Compile Include="Extensions\ImageLoader.cs" />
+    <Compile Include="Helpers\BitmapHelper.cs" />
+    <Compile Include="Views\ActivityClose.cs" />
+    <Compile Include="Device\GPS.cs" />
+    <Compile Include="Tools\Security.cs" />
+    <Compile Include="Extensions\String.cs" />
+    <Compile Include="Extensions\ViewGroup.cs" />
+    <Compile Include="Extensions\Resource.cs" />
+    <Compile Include="Extensions\PackageManager.cs" />
+    <Compile Include="Extensions\Object.cs" />
+    <Compile Include="Factories\Adapter\ComponentViewHolder.cs" />
+    <Compile Include="AppTools.cs" />
+    <Compile Include="Animations\FitToParentAnimation.cs" />
+    <Compile Include="Helpers\LocationHelper.cs" />
+    <Compile Include="Controllers\PagerAnimated\PagerAnimated.cs" />
+    <Compile Include="Controllers\PagerAnimated\PagerAnimatedAdapter.cs" />
+    <Compile Include="Controllers\PagerAnimated\PageTransformers\RevealingPageTransformer.cs" />
+    <Compile Include="Controllers\PagerAnimated\CustomPagerView.cs" />
+    <Compile Include="Tools\Font\FontManager.cs" />
+    <Compile Include="Data\Repository\RepositoryMultiTable.cs" />
+    <Compile Include="Data\Repository\Entity.cs" />
+    <Compile Include="Validation\ValidateEmail.cs" />
+    <Compile Include="Views\RoundView.cs" />
+    <Compile Include="Extensions\Int.cs" />
+    <Compile Include="Controllers\RadialProgress\RadialProgressView.cs" />
+    <Compile Include="Controllers\PaymentCardEditText.cs" />
+    <Compile Include="Animations\CirclesFadeInOutAnimation.cs" />
+    <Compile Include="Listeners\OnSwipeListener.cs" />
+    <Compile Include="Extensions\ListView.cs" />
+    <Compile Include="MultiDexApplication.cs" />
+    <Compile Include="Window\WindowShare.cs" />
+    <Compile Include="Wrappers\Cheeseknife.cs" />
+    <Compile Include="Network\Socket\BaseSocket.cs" />
+    <Compile Include="Data\MVVM\BaseNativeViewModel.cs" />
+    <Compile Include="Extensions\View.Animtaion.cs" />
+    <Compile Include="Tools\UtilitiImage.cs" />
+    <Compile Include="Extensions\Uri.cs" />
+    <Compile Include="Factories\Activity\ComponentReactiveActivity.cs" />
+    <Compile Include="Factories\Activity\ComponentReactiveSupportFragment.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossImageWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossListViewWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossTextWrapper.cs" />
+    <Compile Include="Wrappers\Widget\FactoryConcreteProducts\CrossViewWrapper.cs" />
+    <Compile Include="Wrappers\Widget\WidgetWrapperFactory.cs" />
+    <Compile Include="Factories\Activity\ComponentMVVMViewController.cs" />
+    <Compile Include="Wrappers\Widget\CrossViewInjection\CrossViewInjector.cs" />
+    <Compile Include="Factories\Adapter\RecyclerView\ComponentAdapterRecyclerFactory.cs" />
+    <Compile Include="Factories\Adapter\RecyclerView\BaseAdapter.cs" />
+    <Compile Include="Window\BaseWindow.cs" />
+    <Compile Include="Factories\Adapter\RecyclerView\BaseRecyclerView.cs" />
+    <Compile Include="Extensions\ImageViewExtension.cs" />
+    <Compile Include="Collections\Collection.cs" />
+    <Compile Include="Collections\CollectionItemPerPage.cs" />
+    <Compile Include="Transformations\FadeTransformer.cs" />
+    <Compile Include="Transformations\ParallaxPageTransformer.cs" />
+    <Compile Include="Transformations\ScaleTranformer.cs" />
+    <Compile Include="Transformations\SinkAndSlideTransformer.cs" />
+    <Compile Include="Transformations\WheelPageTransformer.cs" />
+    <Compile Include="Factories\Adapter\PagerAdapter.cs" />
+    <Compile Include="Factories\Adapter\FragmentStatePagerAdapter.cs" />
+    <Compile Include="AkavacheSqliteLinkerOverride.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ImageLoader.axml" />
+    <AndroidResource Include="Resources\anim\FadeIn.xml" />
+    <AndroidResource Include="Resources\anim\FadeOut.xml" />
+    <AndroidResource Include="Resources\anim\LeftSlide.xml" />
+    <AndroidResource Include="Resources\anim\MoveLeft.xml" />
+    <AndroidResource Include="Resources\anim\MoveRight.xml" />
+    <AndroidResource Include="Resources\anim\RightSlide.xml" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
+    <AndroidResource Include="Resources\layout\ZoomView.axml" />
+    <AndroidResource Include="..\Int.Core\Resources\Drawables\error.svg">
+      <Link>Resources\drawable-nodpi\error.svg</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Int.Core\Resources\Drawables\loading_default.gif">
+      <Link>Resources\drawable-nodpi\loading_default.gif</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Int.Core\Resources\Drawables\success.svg">
+      <Link>Resources\drawable-nodpi\success.svg</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Int.Core\Resources\Drawables\warning.svg">
+      <Link>Resources\drawable-nodpi\warning.svg</Link>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-nodpi\cursor.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Collections\" />
+    <Folder Include="Config\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Controllers\Calendar\" />
+    <Folder Include="Drawables\" />
+    <Folder Include="Network\SIP\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <AndroidResource Include="Resources\layout\window_view.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <None Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="SocketIoClientDotNet">
+      <Version>0.9.13</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Int.Core\Int.Core.csproj">
+      <Project>{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}</Project>
+      <Name>Int.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="80" TabsToSpaces="True" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentBlock="True" IndentBraces="False" IndentSwitchSection="True" IndentSwitchCaseSection="True" LabelPositioning="OneLess" NewLinesForBracesInTypes="True" NewLinesForBracesInMethods="True" NewLinesForBracesInProperties="True" NewLinesForBracesInAccessors="True" NewLinesForBracesInAnonymousMethods="True" NewLinesForBracesInControlBlocks="True" NewLinesForBracesInAnonymousTypes="True" NewLinesForBracesInObjectCollectionArrayInitializers="True" NewLinesForBracesInLambdaExpressionBody="True" NewLineForElse="True" NewLineForCatch="True" NewLineForFinally="True" NewLineForMembersInObjectInit="True" NewLineForMembersInAnonymousTypes="True" NewLineForClausesInQuery="True" SpacingAfterMethodDeclarationName="False" SpaceWithinMethodDeclarationParenthesis="False" SpaceBetweenEmptyMethodDeclarationParentheses="False" SpaceAfterMethodCallName="False" SpaceWithinMethodCallParentheses="False" SpaceBetweenEmptyMethodCallParentheses="False" SpaceAfterControlFlowStatementKeyword="True" SpaceWithinExpressionParentheses="False" SpaceWithinCastParentheses="False" SpaceWithinOtherParentheses="False" SpaceAfterCast="False" SpacesIgnoreAroundVariableDeclaration="False" SpaceBeforeOpenSquareBracket="False" SpaceBetweenEmptySquareBrackets="False" SpaceWithinSquareBrackets="False" SpaceAfterColonInBaseTypeDeclaration="True" SpaceAfterComma="True" SpaceAfterDot="False" SpaceAfterSemicolonsInForStatement="True" SpaceBeforeColonInBaseTypeDeclaration="True" SpaceBeforeComma="False" SpaceBeforeDot="False" SpaceBeforeSemicolonsInForStatement="False" SpacingAroundBinaryOperator="Single" WrappingPreserveSingleLine="True" WrappingKeepStatementsOnSingleLine="True" PlaceSystemDirectiveFirst="True" scope="text/x-csharp" />
+          <TextStylePolicy FileWidth="120" TabWidth="4" TabsToSpaces="False" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" scope="text/plain" />
+          <TextStylePolicy inheritsSet="null" scope="application/android+xml" />
+          <XmlFormattingPolicy inheritsSet="null" scope="application/android+xml" />
+          <TextStylePolicy inheritsSet="null" scope="application/xml" />
+          <XmlFormattingPolicy scope="application/xml">
+            <DefaultFormat OmitXmlDeclaration="False" IndentContent="True" AttributesInNewLine="False" MaxAttributesPerLine="10" WrapAttributes="False" AlignAttributes="False" AlignAttributeValues="False" QuoteChar="&quot;" SpacesBeforeAssignment="0" SpacesAfterAssignment="0" EmptyLinesBeforeStart="0" EmptyLinesAfterStart="0" EmptyLinesBeforeEnd="0" EmptyLinesAfterEnd="0" />
+          </XmlFormattingPolicy>
+          <TextStylePolicy inheritsSet="null" scope="application/config+xml" />
+          <XmlFormattingPolicy inheritsSet="null" scope="application/config+xml" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Core.Common.26.1.0\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Core.Common.26.1.0\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets')" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\packages\Fody.2.0.7\build\netstandard1.4\Fody.targets" Condition="Exists('..\packages\Fody.2.0.7\build\netstandard1.4\Fody.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Basement.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Tasks.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Tasks.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Tasks.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Tasks.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Base.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Base.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Base.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Base.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Iid.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Iid.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Iid.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Iid.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Gcm.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Gcm.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Gcm.60.1142.1\build\MonoAndroid80\Xamarin.GooglePlayServices.Gcm.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.Common.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.targets" Condition="Exists('..\packages\Xamarin.Android.Arch.Lifecycle.Runtime.1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Runtime.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Compat.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Core.UI.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Core.UI.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.UI.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Core.Utils.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Core.Utils.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Core.Utils.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.CustomTabs.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.CustomTabs.targets" Condition="Exists('..\packages\Xamarin.Android.Support.CustomTabs.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.CustomTabs.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Exif.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Exif.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Exif.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Exif.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Fragment.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Fragment.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Fragment.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Fragment.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.Media.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Media.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Media.Compat.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Media.Compat.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.v4.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v4.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v4.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v4.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.v7.RecyclerView.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.RecyclerView.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v7.RecyclerView.27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v7.RecyclerView.targets')" />
+</Project>

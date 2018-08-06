@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+  <declare-styleable name="RadialProgressView">
+    <attr name="separateProgressFromItsBackground" format="boolean" />
+    <attr name="progressBackgroundColor" format="color" />
+    <attr name="progressDigitColor" format="color" />
+    <attr name="progressTextColor" format="color" />
+    <attr name="startAngle" format="integer" />
+    <attr name="endAngle" format="integer" />
+    <attr name="arrowDrawable" format="reference" />
+  </declare-styleable>
+</resources>

@@ -1,0 +1,17 @@
+﻿#---Share---#
+
+ErrorMessageConnection = Problemi di rete.
+ErrorMessageServer = Server refused query. Riprovare più tardi.
+ErrorMessageSerialization = Non è stato possibile elaborare la risposta dal server.
+
+ErrorNullValue = Il campo non puo essere vuoto o nullo.
+InvalidHexString = Invalid hex string
+
+ErrorIsLogin = Non si poteva accedere l'applicazione !!!
+ErrorIsAdmin = Non si dispone di autorizzazioni di amministratore !!!
+
+Wait = Attendere prego ...
+EmptyPhone = Vuoto campo Telefono
+
+CompleteRequired = Completa richiesta
+CompleteRequiredFields = Complete required fields

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{C4CC3097-B789-455A-8EE2-FA51BCE43DC0}</ProjectGuid>
+		<ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Int.Core</RootNamespace>
+		<AssemblyName>Int.Core</AssemblyName>
+		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+		<TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+		<NuGetPackageImportStamp>
+		</NuGetPackageImportStamp>
+		<MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+		<ReleaseVersion>1.1.1</ReleaseVersion>
+		<SynchReleaseVersion>false</SynchReleaseVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Debug</OutputPath>
+		<DefineConstants>DEBUG;</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<DocumentationFile>
+		</DocumentationFile>
+		<ConsolePause>false</ConsolePause>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release</OutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<ConsolePause>false</ConsolePause>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="Application\Widget\Contract\Table\Adapter\IAdapter.cs" />
+		<Compile Include="Application\Widget\Contract\Table\IListView.cs" />
+		<Compile Include="Application\Widget\Contract\Table\Source\ISource.cs" />
+		<Compile Include="Controller\Calendar\Abstration\Builder.cs" />
+		<Compile Include="Controller\Calendar\Abstration\CalendarBase.cs" />
+		<Compile Include="Controller\Calendar\Abstration\ICalendar.cs" />
+		<Compile Include="Controller\Calendar\CalendarBuilder.cs" />
+		<Compile Include="Controller\Calendar\CalendarData.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="Extensions\Byte.cs" />
+		<Compile Include="Extensions\DateTime.cs" />
+		<Compile Include="Extensions\String.cs" />
+		<Compile Include="Extensions\Object.cs" />
+		<Compile Include="Extensions\Integer.cs" />
+		<Compile Include="Extensions\Enum.cs" />
+		<Compile Include="Cache\MemoryCache.cs" />
+		<Compile Include="Extensions\IList.cs" />
+		<Compile Include="Extensions\IDictionary.cs" />
+		<Compile Include="Data\Repository\ContractRepository\IUnitOfWork.cs" />
+		<Compile Include="Data\Repository\ContractRepository\IRepository.cs" />
+		<Compile Include="Data\Repository\Repository.cs" />
+		<Compile Include="Data\Repository\ContractRepository\IService.cs" />
+		<Compile Include="Network\NetworkClient.cs" />
+		<Compile Include="Network\NetworkClientBase.cs" />
+		<Compile Include="Wrappers\Google\Service\MapsDirections.cs" />
+		<Compile Include="Wrappers\Google\MapsBase.cs" />
+		<Compile Include="IO\Coordonate.cs" />
+		<Compile Include="IO\Converter.cs" />
+		<Compile Include="Network\ApiBase.cs" />
+		<Compile Include="Data\Repository\ContractRepository\IEntity.cs" />
+		<Compile Include="Device\Media.cs" />
+		<Compile Include="Extensions\Stream.cs" />
+		<Compile Include="Device\Notification.cs" />
+		<Compile Include="Device\Location.cs" />
+		<Compile Include="Device\Network.cs" />
+		<Compile Include="Wrappers\IClickableView.cs" />
+		<Compile Include="Wrappers\UtilityCountry.cs" />
+		<Compile Include="Wrappers\UtilityPerformance.cs" />
+		<Compile Include="Data\Service\IService.cs" />
+		<Compile Include="Data\MVVM\ObservableObject.cs" />
+		<Compile Include="Data\MVVM\BaseViewModel.cs" />
+		<Compile Include="Network\Contract\INetworkClient.cs" />
+		<Compile Include="Network\Contract\INetworkSettings.cs" />
+		<Compile Include="Network\Contract\IResponseService.cs" />
+		<Compile Include="Network\Contract\IResponseFilter.cs" />
+		<Compile Include="Constants\Time.cs" />
+		<Compile Include="Network\Socket\ISocket.cs" />
+		<Compile Include="Application\Login\Contract\ILogin.cs" />
+		<Compile Include="Application\Registration\Contract\IRegistration.cs" />
+		<Compile Include="Application\Dialog\Contract\IDialog.cs" />
+		<Compile Include="Application\Contract\IApp.cs" />
+		<Compile Include="Exceptions\ExceptionApp.cs" />
+		<Compile Include="Network\Response\RequestFactory.cs" />
+		<Compile Include="Network\Response\MResponse.cs" />
+		<Compile Include="Network\Contract\IRestCallbackClient.cs" />
+		<Compile Include="Network\Response\ConfigResponse.cs" />
+		<Compile Include="Wrappers\Callback\HttpClientWrapper.cs" />
+		<Compile Include="Data\Service\Service.cs" />
+		<Compile Include="Network\Singleton\ISingleton.cs" />
+		<Compile Include="Network\Singleton\Singleton.cs" />
+		<Compile Include="Application\Window\Contract\IWindow.cs" />
+		<Compile Include="Application\Widget\Contract\IText.cs" />
+		<Compile Include="Application\Widget\Contract\IImage.cs" />
+		<Compile Include="IO\Config\DialogConfig.cs" />
+		<Compile Include="Device\Contract\IDeviceAdress.cs" />
+		<Compile Include="Application\Widget\Contract\Base\IView.cs" />
+		<Compile Include="Data\MVVM\Contract\IObservableObject.cs" />
+		<Compile Include="Data\MVVM\Contract\IBaseViewModel.cs" />
+		<Compile Include="Wrappers\Window\WindowFactory.cs" />
+		<Compile Include="Extensions\ConcurrentDictionary.cs" />
+		<Compile Include="Data\Repository\Akavache\Contract\IUnitOfWork.cs" />
+		<Compile Include="Data\Repository\Akavache\Contract\IRepository.cs" />
+		<Compile Include="Data\Repository\Akavache\Contract\IBaseEntity.cs" />
+		<Compile Include="Data\Repository\Akavache\Contract\IRepositoryWithId.cs" />
+		<Compile Include="Data\Repository\Akavache\FeedRepository.cs" />
+		<Compile Include="Data\Repository\Akavache\UnitOfWork.cs" />
+		<Compile Include="Data\Repository\Akavache\TypeRepository.cs" />
+		<Compile Include="AkavacheSqliteLinkerOverride.cs" />
+		<Compile Include="Data\Repository\Akavache\RxFeedRepository.cs" />
+		<Compile Include="Data\Repository\Akavache\Contract\RxIRepository.cs">
+			<DependentUpon>IRepository.cs</DependentUpon>
+		</Compile>
+		<Compile Include="Extensions\RequestFactory.cs" />
+		<Compile Include="Application\Contract\IUser.cs" />
+		<Compile Include="Application\Exception\ExceptionLogger.cs" />
+		<Compile Include="Tools\Font\IFont.cs" />
+		<Compile Include="Tools\Font\FontManager.cs" />
+		<Compile Include="Attributes\StringValue.cs" />
+		<Compile Include="Application\Exception\ExceptionWithCustomStack.cs" />
+		<Compile Include="Wrappers\Widget\Exceptions\CrossWidgetWrapperConstructorException.cs" />
+		<Compile Include="Resources\Locales\RShare.cs" />
+		<Compile Include="Wrappers\Widget\CrossViewInjection\CrossViewInjectorBase.cs" />
+		<Compile Include="Wrappers\Widget\CrossViewInjection\CrossViewInjectorException.cs" />
+		<Compile Include="Wrappers\Widget\Exceptions\CrossWidgetWrapperNullReferenceException.cs" />
+		<Compile Include="Application\Widget\Contract\Table\Adapter\ICrossCellViewHolder.cs" />
+		<Compile Include="Wrappers\State.cs" />
+		<Compile Include="Data\MVVM\Contract\IViewModelContainer.cs" />
+		<Compile Include="Wrappers\Widget\CrossViewInjection\WidgetWrapperFactoryException.cs" />
+		<Compile Include="Application\Widget\Contract\Table\Adapter\ICrossCell.cs" />
+		<Compile Include="Application\Menu\Contract\IMenu.cs" />
+		<Compile Include="Application\Menu\Contract\IItemMenu.cs" />
+		<Compile Include="Application\Menu\BaseMenuManager.cs" />
+		<Compile Include="Application\Window\Contract\IPopupWindow.cs" />
+		<Compile Include="Network\Contract\RequestTo.cs" />
+		<Compile Include="Factories\IExpandableCellData.cs" />
+		<Compile Include="Application\Window\WindowPositionType.cs" />
+		<Compile Include="Application\Window\Contract\ISettingsWindow.cs" />
+		<Compile Include="Application\Window\SettingWindow.cs" />
+		<Compile Include="Extensions\IBaseViewModel.cs" />
+		<Compile Include="Helpers\MapHelper.cs" />
+		<Compile Include="Helpers\Google\Services\Email.cs" />
+		<Compile Include="Helpers\Google\Services\Service.cs" />
+		<Compile Include="Helpers\Google\Authentication\Contract\IGoogleAuthenticatorDelegate.cs" />
+		<Compile Include="Helpers\Google\Authentication\Model\GoogleOAuthToken.cs" />
+		<Compile Include="Helpers\Google\Authentication\GoogleAuthenticator.cs" />
+		<Compile Include="Tools\Logs.cs" />
+		<Compile Include="Helpers\ColorHelper.cs" />
+		<Compile Include="Helpers\ImageHelper.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Attributes\" />
+		<Folder Include="Collections\" />
+		<Folder Include="Concurrency\" />
+		<Folder Include="Events\" />
+		<Folder Include="Factories\" />
+		<Folder Include="Streaming\" />
+		<Folder Include="Application\Exception\" />
+		<Folder Include="Tools\">
+		</Folder>
+		<Folder Include="Tools\Font\">
+		</Folder>
+		<Folder Include="Wrappers\Widget\" />
+		<Folder Include="Wrappers\Widget\Exceptions\" />
+		<Folder Include="Resources\">
+		</Folder>
+		<Folder Include="Resources\Locales\">
+		</Folder>
+		<Folder Include="Resources\Locales\en\">
+		</Folder>
+		<Folder Include="Resources\Locales\it\">
+		</Folder>
+		<Folder Include="Wrappers\Widget\CrossViewInjection\" />
+		<Folder Include="Application\Menu\" />
+		<Folder Include="Application\Menu\Contract\" />
+		<Folder Include="Resources\Drawables\">
+		</Folder>
+		<Folder Include="Helpers\">
+		</Folder>
+		<Folder Include="Helpers\Google\">
+		</Folder>
+		<Folder Include="Helpers\Google\Services\">
+		</Folder>
+		<Folder Include="Helpers\Google\Authentication\">
+		</Folder>
+		<Folder Include="Helpers\Google\Authentication\Contract\">
+		</Folder>
+		<Folder Include="Helpers\Google\Authentication\Model\">
+		</Folder>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="packages.config" />
+		<None Include="Resources\Drawables\warning.svg" />
+		<None Include="Resources\Drawables\success.svg" />
+		<None Include="Resources\Drawables\error.svg" />
+		<None Include="FodyWeavers.xml" />
+		<None Include="Resources\Drawables\loading_default.gif" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="MemoryCache, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+			<HintPath>..\packages\MemoryCache.1.2.0\lib\MemoryCache.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+			<HintPath>..\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+			<HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+			<HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+			<HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.PlatformServices.dll</HintPath>
+		</Reference>
+		<Reference Include="SQLitePCL.raw">
+			<HintPath>..\packages\SQLitePCL.raw_basic.0.8.6\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+		</Reference>
+		<Reference Include="ReactiveUI">
+			<HintPath>..\packages\reactiveui-core.7.4.0\lib\portable-net45+netcore45+wpa81+win8+wp8+UAP10+MonoAndroid403+MonoTouch10+Xamarin.iOS10\ReactiveUI.dll</HintPath>
+		</Reference>
+		<Reference Include="Splat">
+			<HintPath>..\packages\Splat.1.6.0\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+		</Reference>
+		<Reference Include="Akavache">
+			<HintPath>..\packages\akavache.core.5.0.0\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.dll</HintPath>
+		</Reference>
+		<Reference Include="Akavache.Sqlite3">
+			<HintPath>..\packages\akavache.sqlite3.5.0.0\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.Sqlite3.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+			<HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+		</Reference>
+		<Reference Include="Humanizer">
+			<HintPath>..\packages\Humanizer.Core.2.2.0\lib\netstandard1.0\Humanizer.dll</HintPath>
+		</Reference>
+		<Reference Include="ReactiveUI.Fody.Helpers">
+		  <HintPath>..\packages\ReactiveUI.Fody.2.2.11\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\ReactiveUI.Fody.Helpers.dll</HintPath>
+		</Reference>
+		<Reference Include="Validation">
+		  <HintPath>..\packages\Validation.2.4.18\lib\portable-net45+win8+wp8+wpa81\Validation.dll</HintPath>
+		</Reference>
+		<Reference Include="PCLCrypto">
+		  <HintPath>..\packages\PCLCrypto.2.0.147\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\PCLCrypto.dll</HintPath>
+		</Reference>
+		<Reference Include="SkiaSharp">
+		  <HintPath>..\packages\SkiaSharp.1.60.0\lib\portable-net45+win8+wpa81+wp8\SkiaSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Plugin.Connectivity.Abstractions">
+		  <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Plugin.Connectivity">
+		  <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+		  <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Com.OneSignal.Abstractions">
+		  <HintPath>..\packages\Com.OneSignal.3.1.1\lib\netstandard1.0\Com.OneSignal.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Com.OneSignal">
+		  <HintPath>..\packages\Com.OneSignal.3.1.1\lib\netstandard1.0\Com.OneSignal.dll</HintPath>
+		</Reference>
+		<Reference Include="Xamarin.Auth">
+		  <HintPath>..\packages\Xamarin.Auth.1.6.0.2\lib\netstandard1.0\Xamarin.Auth.dll</HintPath>
+		</Reference>
+		<Reference Include="SQLitePCLRaw.core">
+		  <HintPath>..\packages\SQLitePCLRaw.core.1.1.11\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+		</Reference>
+		<Reference Include="SQLitePCLRaw.batteries_e_sqlite3">
+		  <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.11\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_e_sqlite3.dll</HintPath>
+		</Reference>
+		<Reference Include="SQLitePCLRaw.batteries_v2">
+		  <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.11\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+		</Reference>
+		<Reference Include="PInvoke.Windows.Core">
+		  <HintPath>..\packages\PInvoke.Windows.Core.0.5.147\lib\portable-net45+win8+wpa81\PInvoke.Windows.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="PInvoke.Kernel32">
+		  <HintPath>..\packages\PInvoke.Kernel32.0.5.147\lib\portable-net45+win8+wpa81\PInvoke.Kernel32.dll</HintPath>
+		</Reference>
+		<Reference Include="PInvoke.BCrypt">
+		  <HintPath>..\packages\PInvoke.BCrypt.0.5.147\lib\portable-net45+win8+wpa81\PInvoke.BCrypt.dll</HintPath>
+		</Reference>
+		<Reference Include="PInvoke.NCrypt">
+		  <HintPath>..\packages\PInvoke.NCrypt.0.5.147\lib\portable-net45+win8+wpa81\PInvoke.NCrypt.dll</HintPath>
+		</Reference>
+		<Reference Include="Plugin.Media.Abstractions">
+		  <HintPath>..\packages\Xam.Plugin.Media.3.2.1\lib\netstandard1.0\Plugin.Media.Abstractions.dll</HintPath>
+		</Reference>
+		<Reference Include="Plugin.Media">
+		  <HintPath>..\packages\Xam.Plugin.Media.3.2.1\lib\netstandard1.0\Plugin.Media.dll</HintPath>
+		</Reference>
+		<Reference Include="Plugin.Geolocator">
+		  <HintPath>..\packages\Xam.Plugin.Geolocator.4.5.0.1\lib\netstandard1.0\Plugin.Geolocator.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Locales\en\en.txt" />
+		<EmbeddedResource Include="Resources\Locales\it\it.txt" />
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+	<ProjectExtensions>
+	  <MonoDevelop>
+	    <Properties>
+	      <Policies>
+	        <TextStylePolicy TabWidth="4" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" FileWidth="80" TabsToSpaces="True" scope="text/x-csharp" />
+	        <CSharpFormattingPolicy IndentBlock="True" IndentBraces="False" IndentSwitchSection="True" IndentSwitchCaseSection="True" LabelPositioning="OneLess" NewLinesForBracesInTypes="True" NewLinesForBracesInMethods="True" NewLinesForBracesInProperties="True" NewLinesForBracesInAccessors="True" NewLinesForBracesInAnonymousMethods="True" NewLinesForBracesInControlBlocks="True" NewLinesForBracesInAnonymousTypes="True" NewLinesForBracesInObjectCollectionArrayInitializers="True" NewLinesForBracesInLambdaExpressionBody="True" NewLineForElse="True" NewLineForCatch="True" NewLineForFinally="True" NewLineForMembersInObjectInit="True" NewLineForMembersInAnonymousTypes="True" NewLineForClausesInQuery="True" SpacingAfterMethodDeclarationName="False" SpaceWithinMethodDeclarationParenthesis="False" SpaceBetweenEmptyMethodDeclarationParentheses="False" SpaceAfterMethodCallName="False" SpaceWithinMethodCallParentheses="False" SpaceBetweenEmptyMethodCallParentheses="False" SpaceAfterControlFlowStatementKeyword="True" SpaceWithinExpressionParentheses="False" SpaceWithinCastParentheses="False" SpaceWithinOtherParentheses="False" SpaceAfterCast="False" SpacesIgnoreAroundVariableDeclaration="False" SpaceBeforeOpenSquareBracket="False" SpaceBetweenEmptySquareBrackets="False" SpaceWithinSquareBrackets="False" SpaceAfterColonInBaseTypeDeclaration="True" SpaceAfterComma="True" SpaceAfterDot="False" SpaceAfterSemicolonsInForStatement="True" SpaceBeforeColonInBaseTypeDeclaration="True" SpaceBeforeComma="False" SpaceBeforeDot="False" SpaceBeforeSemicolonsInForStatement="False" SpacingAroundBinaryOperator="Single" WrappingPreserveSingleLine="True" WrappingKeepStatementsOnSingleLine="True" PlaceSystemDirectiveFirst="True" scope="text/x-csharp" />
+	        <TextStylePolicy FileWidth="120" TabWidth="4" TabsToSpaces="False" IndentWidth="4" RemoveTrailingWhitespace="True" NoTabsAfterNonTabs="False" EolMarker="Native" scope="text/plain" />
+	      </Policies>
+	    </Properties>
+	  </MonoDevelop>
+	</ProjectExtensions>
+	<Import Project="..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+	<Import Project="..\packages\Fody.2.2.1.0\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.2.2.1.0\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
+	<Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+</Project>

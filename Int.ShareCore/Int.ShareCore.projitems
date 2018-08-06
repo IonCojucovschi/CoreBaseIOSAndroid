@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{B56824FF-888D-4895-A530-6298C39A87A4}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Int.ShareCore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Google\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Google\ModelGoogleWaypoint\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Google\ModelGoogleWaypoint\GoogleWaypointsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google\ModelGoogleWaypoint\LocationGoogleParse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Google\ModelGoogleWaypoint\IPointLocation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\NetworkShareHelpers.cs" />
+  </ItemGroup>
+</Project>
